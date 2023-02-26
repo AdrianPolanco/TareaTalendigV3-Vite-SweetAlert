@@ -1,6 +1,6 @@
 import { Estudiante } from "./clase.js";
 import { mostrarTabla, estudianteEditar } from "./tabla.js";
-import swal from "sweetalert";
+//import swal from "sweetalert";
 //Selecciona los elementos relevantes: INPUTS, FORMS Y SELECTOR
 const inputs = document.querySelectorAll("#form-section input");
 export { inputs };
@@ -23,25 +23,25 @@ export function guardarEstudiante() {
 }
 
 export function eliminarEstudiante(id) {
-    let choice = swal({
+   /* let choice = swal({
         title: "¿Estas seguro/a de que quieres eliminar esta fila?",
         text: "Una vez eliminada, no podrás recuperar esta fila.",
         icon: "warning",
         buttons: true,
         dangerMode: true,
     });
-    choice.then((respuesta) => {
-        if (respuesta) {
+    choice.then((respuesta) => {*/
+      //  if (respuesta) {
             estudiantes = estudiantes.filter(
                 (estudiante) => estudiante.id !== id
-            );
+            );/*
             swal("La fila ha sido eliminada con éxito.", {
                 icon: "success",
             });
         } else {
             swal("¡Enhorabuena! Tu fila se mantendrá.");
         }
-    });
+    });*/
 
     /*if (choice) {
         estudiantes = estudiantes.filter((estudiante) => estudiante.id !== id);
